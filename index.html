@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=stylesheet type="text/css" href="css/style.css">
+        <style>
+            @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+                [class*="col-"] {
+                    width: 100%;
+                }
+            }
+            .flex-container {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="fixed-header">
+        <header id="header">
+            <center>
+                <img id="header-img" src="https://www.pngitem.com/pimgs/m/77-774883_transparent-bleach-logo-bleach-hd-png-download.png">
+                <nav id="nav-bar">
+                    <a class="nav-link" href="#learn-more">Learn More</a>
+                    <a class="nav-link" href="#request-coupon">Request Coupon</a>
+                    <a class="nav-link" href="#buy-on-crunchyroll">Buy at Online Store</a>
+                </nav>
+            </center>
+        </div>
+        </header>
+        <section id="learn-more">
+            <center>
+                <h1>Bleach Thousand Year Blood War</h1>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/78WIYzX_m98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </section>
+        <section id="request-coupon">
+            <center>
+                <h2>Request a Coupon</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" name="email" type="email" placeholder="you@whatever.com">
+                <input id="submit" type="submit">
+            </form>
+            </center>
+        </section>
+        <section id="buy-on-crunchyroll">
+            <div class="flex=container">
+                <div><a href="/crunchyroll-affiliate-link">Buy on Crunchyroll</a></div>
+                <div><a href="/hulu-affiliate-link">Buy on hulu</a></div>
+                <div><a href="/NETFLIX-affiliate-link">Buy on NETFLIX</a></div>
+            </div>
+        </section>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+        window.onscroll = function() {myFuncton()};
+
+        var header = document.getElementById('myHeader');
+        var sticky = header.offsetTop;
+
+        function myFuncton() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        }
+    </script>
+</html>
